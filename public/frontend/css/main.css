@@ -37,8 +37,15 @@ nav {
 nav ul {
     width: 300px;
 }
-nav a {
+nav a, nav input::placeholder {
     color: #1865f2 !important;
     font-weight: 700;
     letter-spacing: 0.5px;
+}
+nav input {
+    background-color: #F0F1F2 !important;
+    border: none !important;
+}
+nav li {
+    padding: 0 5px;
 }
