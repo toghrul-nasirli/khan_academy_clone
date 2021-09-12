@@ -2,6 +2,15 @@ html {
     box-sizing: border-box;
     font-size: 16px;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+main {
+    flex: 1;
+}
 *,
 *:before,
 *:after {
@@ -37,15 +46,46 @@ nav {
 nav ul {
     width: 300px;
 }
-nav a, nav input::placeholder {
-    color: #1865f2 !important;
+nav a,
+nav input::placeholder {
+    color: var(--primary) !important;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
 nav input {
-    background-color: #F0F1F2 !important;
+    background-color: #f0f1f2 !important;
     border: none !important;
 }
 nav li {
     padding: 0 5px;
+}
+footer {
+    background-color: #0a2a65;
+    color: #fff;
+    padding-top: 48px;
+}
+footer p,
+footer span {
+    color: #8295ba;
+    font-size: 20px;
+}
+footer a, footer a:hover {
+    color: #fff;
+}
+footer a,
+footer span {
+    font-size: 12px;
+}
+footer .last-div {
+    border-top: 1px solid #fff;
+}
+footer h3 {
+    color: #8295ba;
+    font-size: 12px;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+footer ul li {
+    font-size: 12px;
+    padding: 5px 0;
 }
