@@ -39,6 +39,6 @@ class WorkController extends Controller
     {
         $work->delete();
 
-        return back()->with('success', 'Referans silindi!');
+        return back()->with('success', 'Uğurla silindi!');
     }
 }

@@ -16,6 +16,12 @@
                         <p>Bizim işlərimiz</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="{{ route('admin.supporters.index') }}" class="nav-link {{ request()->is('admin/supporters*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-hand-holding-heart"></i>
+                        <p>Dəstəkçilərimiz</p>
+                    </a>
+                </li>
                 {{-- <li class="nav-item">
                     <a href="{{ route('admin.slider-items.index') }}" class="nav-link {{ request()->is('admin/slider-items*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-sliders-h"></i>
