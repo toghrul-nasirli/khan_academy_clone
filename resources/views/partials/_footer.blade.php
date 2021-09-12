@@ -4,7 +4,7 @@
             <div class="col-12 row px-md-0 pb-3">
                 <div class="col-12 col-md-5 text-center text-md-left mb-5">
                     <p class="mb-4">Our mission is to provide a free, world-class education to anyone, anywhere.</p>
-                    <p>Khan Academy is a 501(c)(3) nonprofit organization. Donate or volunteer today!</p>
+                    <p>Khan Academy is a 501(c)(3) nonprofit organization. <a href="#">Donate</a> or <a href="#">volunteer</a> today!</p>
                 </div>
                 <div class="col-6 col-md-2">
                     <ul class="mb-4">
@@ -55,12 +55,14 @@
             <div class="col-12 text-center text-md-left px-0">
                 <div class="mb-1">
                     <span class="mr-2">Language</span>
-                    <span class="text-white">
+                    <a class="dropdown-toggle user-select-none" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         English
-                        <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" class="_siqxmg">
-                            <path fill="#FFFFFF" d="M8 8.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 1.414-1.414L8 8.586z"></path>
-                        </svg>
-                    </span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </div>
                 <div class="mb-3">
                     <span class="mr-3">Country</span>
