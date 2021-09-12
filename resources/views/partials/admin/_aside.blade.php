@@ -5,7 +5,7 @@
                 <img src="{{ asset('backend/img/avatar.png') }}" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="{{ route('index') }}" class="d-block"><b>{{ auth()->user()->username ?? '' }}</b></a>
+                <a href="{{ route('index') }}" class="d-block"><b>{{ auth()->user()->name }}</b></a>
             </div>
         </div>
         <nav class="mt-2">
