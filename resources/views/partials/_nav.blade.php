@@ -20,6 +20,7 @@
                 <li class="nav-item">
                     <form class="my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <img src="{{ asset('frontend/img/search-btn.svg') }}">
                     </form>
                 </li>
             </ul>

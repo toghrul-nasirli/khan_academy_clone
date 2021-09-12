@@ -8,6 +8,7 @@
 <link rel="dns-prefetch" href="//fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
+<link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 <link href="{{ asset('frontend/css/main.css') }}" rel="stylesheet">
 <script src="{{ asset('js/app.js') }}"></script>

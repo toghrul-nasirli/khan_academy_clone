@@ -56,6 +56,14 @@ nav input {
     background-color: #f0f1f2 !important;
     border: none !important;
 }
+nav form {
+    position: relative;
+}
+nav input + img {
+    position: absolute !important;
+    top: 8px;
+    right: 8px;
+}
 nav li {
     padding: 0 5px;
 }
@@ -151,7 +159,7 @@ section .join-today h2 {
     font-weight: 500;
     margin-bottom: 40px;
 }
-section .join-today .btn{
+section .join-today .btn {
     margin: 5px 0;
     padding: 15px 120px;
 }
