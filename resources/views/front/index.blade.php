@@ -618,59 +618,21 @@
         <div class="supporters">
             <div class="container">
                 <h2>Key supporters</h2>
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
+                <div class="row justify-content-center">
+                    @foreach ($keySupporters as $keySupporter)
+                        <div class="col-md-6 col-lg-3">
+                            <img src="{{ str_contains(asset('uploads/supporters/' . $keySupporter->logo), 'via') ? asset('frontend/img/supporter.png') : asset('uploads/supporters/' . $keySupporter->logo) }}">
+                        </div>
+                    @endforeach
                 </div>
                 <hr>
                 <h2>Supporters of our COVID-19 response</h2>
-                <div class="row">
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <img src="{{ asset('frontend/img/supporter.png') }}" alt="">
-                    </div>
+                <div class="row justify-content-center">
+                    @foreach ($covid_19ResponseSupporters as $covid_19ResponseSupporter)
+                        <div class="col-md-6 col-lg-3">
+                            <img src="{{ str_contains(asset('uploads/supporters/' . $covid_19ResponseSupporter->logo), 'via') ? asset('frontend/img/supporter.png') : asset('uploads/supporters/' . $covid_19ResponseSupporter->logo) }}">
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
