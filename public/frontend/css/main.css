@@ -59,6 +59,124 @@ nav input {
 nav li {
     padding: 0 5px;
 }
+section h1 {
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    font-size: 53px;
+}
+section p {
+    font-size: 18px;
+}
+section .works,
+section .inspiration {
+    background-image: url("../img/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+section .works > div {
+    padding: 100px 0;
+}
+section .works h2 {
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+section .works h3 {
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    font-size: 25px;
+}
+section .works span {
+    font-size: 16px;
+}
+section .one-btn-div {
+    margin-bottom: 150px;
+}
+section .one-btn-div span {
+    color: rgba(33, 36, 44, 0.64);
+    display: block;
+}
+section .one-btn-div h2 {
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 26px;
+}
+section .one-btn-div p {
+    font-size: 18px;
+}
+section .one-btn-div span:first-of-type {
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+section .one-btn-div span:last-of-type {
+    font-size: 11px;
+}
+section .one-btn-div .btn {
+    margin-top: 35px;
+}
+section .inspiration p {
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    font-size: 32px;
+}
+section .inspiration {
+    padding: 100px 40px;
+}
+section .inspiration img {
+    width: 100%;
+    height: 150px;
+}
+section .inspiration span {
+    font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif, Helvetica,
+        Corbel, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+section .inspiration small {
+    font-family: Lato, "Noto Sans", Helvetica, Corbel, sans-serif, Helvetica,
+        Corbel, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+}
+section .join-today {
+    text-align: center;
+    margin-bottom: 150px;
+}
+section .join-today h2 {
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+section .join-today .btn{
+    margin: 5px 0;
+    padding: 15px 120px;
+}
+section .supporters {
+    background-image: url("../img/background.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 80px 0;
+}
+section .supporters h2 {
+    font-family: "Source Serif Pro", "Noto Serif", serif;
+    font-size: 36px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+section .supporters > div {
+    padding: 0 100px;
+}
+section .supporters img {
+    padding: 35px 0;
+}
+section .supporters hr {
+    background-color: #000;
+}
 footer {
     background-color: #0a2a65;
     color: #fff;
@@ -72,7 +190,8 @@ footer span {
 footer p a {
     font-size: unset;
 }
-footer a, footer a:hover {
+footer a,
+footer a:hover {
     color: #fff;
 }
 footer a,

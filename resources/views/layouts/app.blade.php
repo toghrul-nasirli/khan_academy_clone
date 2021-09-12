@@ -8,7 +8,7 @@
 <body>
     @include('partials._nav')
 
-    <main class="py-4">
+    <main>
         @yield('content')
     </main>
     
