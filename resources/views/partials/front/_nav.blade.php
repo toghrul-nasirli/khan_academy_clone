@@ -5,7 +5,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse justify-content-center pl-lg-5" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto d-none d-md-inline-flex">
             <li class="nav-item dropdown my-auto">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -28,7 +28,7 @@
         <a class="navbar-brand m-0 p-0 d-none d-md-block" href="#">
             <img src="{{ asset('frontend/img/logo.svg') }}" height="62" width="175" alt="logo">
         </a>
-        <ul class="navbar-nav ml-auto d-none d-md-inline-flex justify-content-end">
+        <ul class="navbar-nav ml-auto d-none d-md-inline-flex justify-content-end pr-lg-5">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Donate</a>
             </li>

@@ -270,7 +270,7 @@
                         <span>Teachers</span>
                         <h2>Differentiate your classroom and engage every student.</h2>
                         <p>We empower teachers to support their entire classroom. 90% of US teachers who have used Khan Academy have found us effective.</p>
-                        <span class="d-block">SOURCE: 2018 ConStat U.S. Online Education Customer Survey</span>
+                        <span class="d-block pt-2">SOURCE: 2018 ConStat U.S. Online Education Customer Survey</span>
                         <a href="#" class="btn btn-lg btn-primary py-3 px-4">Teacher, start here</a>
                     </div>
                 </div>
