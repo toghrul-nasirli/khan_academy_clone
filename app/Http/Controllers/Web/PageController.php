@@ -14,6 +14,6 @@ class PageController extends Controller
         $covid_19ResponseSupporters = Supporter::where('covid_19', '1')->get();
         $works = Work::all();
 
-        return view('front.index', compact('works', 'keySupporters', 'covid_19ResponseSupporters'));
+        return view('front.pages.index', compact('works', 'keySupporters', 'covid_19ResponseSupporters'));
     }
 }

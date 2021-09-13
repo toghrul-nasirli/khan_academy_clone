@@ -167,7 +167,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="my-5 mx-3">
-                        <h1 class="font-weight-bold">For every student, every classroom. Real results.</h1>
+                        <h1>For every student, every classroom. Real results.</h1>
                         <p class="my-4">We’re a nonprofit with the mission to provide a free, world-class education for anyone, anywhere.</p>
                         <a href="#" class="d-md-none btn btn-primary">Start here</a>
                         <a href="#" class="d-none d-md-inline-block btn btn-primary mx-1">Learners</a>
