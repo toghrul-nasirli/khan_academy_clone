@@ -6,19 +6,27 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Work\StoreWorkRequest;
 use App\Http\Requests\Work\UpdateWorkRequest;
 use App\Models\Work;
+use App\Repositories\Work\iWorkRepository;
 
 class WorkController extends Controller
 {
+    private $workRepo;
+
+    public function __construct(iWorkRepository $workRepo)
+    {
+        $this->workRepo = $workRepo;
+    }
+
     public function index()
     {
-        $works = Work::all();
+        $works = $this->workRepo->all();
 
         return view('admin.works.index', compact('works'));
     }
 
     public function store(StoreWorkRequest $request)
     {
-        Work::create($request->validated());
+        $this->workRepo->create($request);
 
         return back()->with('success', 'Əlavə olundu!');
     }
@@ -30,7 +38,7 @@ class WorkController extends Controller
 
     public function update(Work $work, UpdateWorkRequest $request)
     {
-        $work->update($request->validated());
+        $this->workRepo->update($work, $request);
 
         return redirect()->route('admin.works.index')->with('success', 'Dəyişikliklər yadda saxlanıldı!');
     }
